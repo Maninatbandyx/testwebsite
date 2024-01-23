@@ -30,7 +30,7 @@
       <div class="container">
         <!-- Logo -->
         <a class="Bandyx Apparel" href="index.html">
-          <img src="logonav.png" alt="Logo firmy" width="100" height="100" class="d-inline-block align-top">
+          <img src="logonav.png" alt="Your Logo" width="100" height="100" class="d-inline-block align-top">
         </a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -72,153 +72,83 @@
       </div>
     </nav>
 </header>
-<main>
-<main class="container">
 
-  <!-- Hero Section -->
-  <section id="hero">
-  <img src="banner-1.jpg" class="img-fluid" alt="hero image">
-<div style="width: 100%; height: auto; display: block;">
-</div>
-</div>
-</div>
+<style>
+    body {
+      padding-top: 56px; /* Adjust for fixed navbar height */
+    }
 
-</section>
+    .cart-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
 
-  <!-- Featured Products Section -->
-  <sect id="featured-products">
-  
-  <h1>Nowości od Bandyx</h1>
-    <div class="row">
-      <!-- Product 1 -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100 mb-5">
-          <img src="product1.png" class="card-img-top" alt="The Oversize T-Shirt is designed with dropped shoulders and an oversize fit, providing a sense of freedom and comfort. It is made from thick and soft cotton, creating a dream-like feeling against the skin. This t-shirt offers both comfort and style, making it suitable for various occasions, whether you are out and about or relaxing at home. The Oversize T-Shirt is a part of the oversized revolution, where comfort and style go hand in hand.
-">
-          <div class="card-body mb-5">
-            <h5 class="card-title">Oversize T-shirt Eyes</h5>
-            <h4 class="card-price">€29,99</h4>
-            <a href="#" class="btn btn-primary">Kup Teraz</a>
-          </div>
-        </div>
+    .cart-item {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .item-image {
+      flex: 0 0 50px; /* Set a fixed width for the item image */
+      margin-right: 10px;
+    }
+
+    .item-details {
+      flex-grow: 1;
+    }
+
+    .item-remove {
+      cursor: pointer;
+      color: red;
+    }
+
+    .cart-total {
+      margin-top: 20px;
+      text-align: right;
+    }
+  </style>
+
+  <title>Shopping Cart</title>
+</head>
+<body>
+
+  <!-- Shopping Cart Container -->
+  <main>
+  <div class="cart-container">
+
+    <!-- Cart Items (replace with your actual cart item data) -->
+    <div class="cart-item">
+      <img src="product1.jpg" alt="Product 1" class="item-image">
+      <div class="item-details">
+        <h5>Product 1</h5>
+        <p>Price: $19.99</p>
+        <p>Quantity: 2</p>
       </div>
-
-      <!-- Product 2 -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100 mb-5">
-          <img src="product2.png" class="card-img-top" alt="T-SHIRT EVIL embodies the oversized revolution, offering unparalleled freedom and comfort with its dropped shoulders and loose fit. Crafted from premium, thick cotton, it creates a dream-like sensation against the skin. Versatile for any occasion, whether you're on the move or lounging at home, this t-shirt seamlessly blends comfort and style.">
-          <div class="card-body">
-            <h5 class="card-title">Oversize T-Shirt Evil</h5>
-            <h4 class="card-price">€29,99</h4>
-            <a href="#" class="btn btn-primary">Kup Teraz</a>
-          </div>
-          </div>
-      </div>
-
-          <!-- Product 3 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100 mb-5">
-          <img src="product3.png" class="card-img-top" alt="The Oversize T-Shirt is designed with dropped shoulders and an oversize fit, providing a sense of freedom and comfort. It is made from thick and soft cotton, creating a dream-like feeling against the skin. This t-shirt offers both comfort and style, making it suitable for various occasions, whether you are out and about or relaxing at home. The Oversize T-Shirt is a part of the oversized revolution, where comfort and style go hand in hand.
-">
-          <div class="card-body mb-5">
-            <h5 class="card-title">Oversize T-Shirt Crimescene</h5>
-            <h4 class="card-price">€29,99</h4>
-            <a href="#" class="btn btn-primary">Kup Teraz</a>
-        </div>
-      </div>
-      </div>
-      <a href="products.html" class="btn btn-primary">Sprawdz wszystkie produkty</a>
-      </div>
-
-  </section>
-
-  <!-- About Us Section -->
-  <section id="about-us" class="text-center">
-  <img src="logoonas.png" alt="About Us Image" class="img-fluid mx-auto d-block"> 
-  <div class="accordion" id="accordionPanelsStayOpenExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-        Odporność
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-      <div class="accordion-body">
-        <strong>Kiedy mówimy Odporność, mamy na myśli zdolność odbicia się od trudnych sytuacji. Chcemy tworzyć ubrania, które pomogą Ci poczuć się silnym i zdolnym, nawet gdy życie staje się trudne.</strong>
-      </div>
+      <div class="item-remove">&#10005;</div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-        Indywidualnośc
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        <strong>Indywidualność odnosi się do idei, że każdy jest wyjątkowy i ma własną osobowość, styl i perspektywę. Bandyx Apparel pragnie celebrować tę wyjątkowość, tworząc ubrania, które pomogą Ci wyrazić siebie na swój własny sposób.</strong>
+
+    <div class="cart-item">
+      <img src="product2.jpg" alt="Product 2" class="item-image">
+      <div class="item-details">
+        <h5>Product 2</h5>
+        <p>Price: $24.99</p>
+        <p>Quantity: 1</p>
       </div>
+      <div class="item-remove">&#10005;</div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-        Aspiracja
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        <strong>Aspiracja oznacza posiadanie celów i marzeń na przyszłość. Bandyx Apparel chce tworzyć ubrania, które zainspirują Cię do pogoni za swoimi aspiracjami i bycia najlepszą wersją siebie.</strong>
-      </div>
+
+    <!-- Add more cart items as needed -->
+
+    <!-- Cart Total -->
+    <div class="cart-total">
+      <h4>Total: $44.97</h4>
     </div>
-  </div>
-
-  </section>
-  <!-- Contact Section -->
-  <section id="contact"> 
-  <div class="container" style="margin-top: 50px">
-    <div class="row">
-      <div class="col-lg-6">
-        <h2>Skontaktuj sie z nami</h2>
-        <p>Masz pytania lub chcesz podzielić się swoją opinią? Jesteśmy tu dla Ciebie.</p>
-
-        <!-- Contact Form -->
-        <form>
-          <div class="form-group">
-            <label for="Imię">Imię:</label>
-            <input type="text" class="form-control" id="name" placeholder="Podaj swoje imię">
-          </div>
-
-          <div class="form-group">
-            <label for="Adres Email">Email:</label>
-            <input type="Adres Email" class="form-control" id="email" placeholder="Podaj swoj adres email">
-          </div>
-
-          <div class="form-group">
-            <label for="Tekst">Twoja wiadomość:</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="Podziel się swoją opinią"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary">Wyślij</button>
-        </form>
-      </div>
-      <div class="col-lg-6">
-        <!-- Additional Contact Information -->
-        <h4>Informacje dodatkowe:</h4>
-        <p>Email: bandyxshop@gmail.com</p>
-        <p>Phone: (123) 456-7890</p>
-
-        <!-- Social Media Links -->
-        <h4>Obserwuj nas:</h4>
-        <a href="https://www.facebook.com/profile.php?id=61551231554405" target="_blank">Facebook</a> | <a href="https://www.pinterest.de/BandyxApparel/" target="_blank">Pinterest</a> | <a href="#" target="_blank">Instagram</a>
-      </div>
-    </div>
-  </div>
-  </section>
-</main>
-
-  </head>
-  <footer>
+ </div>
+ </main>
+ <footer>
 
     <!-- Section: Social media -->
   <div class="container text-center md-text-start mt-5 align-items-center" style="margin-top: 20px">              
@@ -357,7 +287,7 @@
     © 2024 Copyright: Bandyx 
   </div>
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
