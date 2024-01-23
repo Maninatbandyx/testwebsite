@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="register.js" defer></script>
 <script src="navbar.js" defer></script>
+<script src="carousel.js" defer></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <style>
@@ -29,8 +30,8 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <!-- Logo -->
-        <a class="Bandyx Apparel" href="index.html">
-          <img src="logonav.png" alt="Logo firmy" width="100" height="100" class="d-inline-block align-top">
+        <a class="Bandyx Apparel" href="\src\index.html">
+          <img src="\src\images\logonav.png" alt="Logo firmy" width="100" height="100" class="d-inline-block align-top">
         </a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,32 +41,32 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Główna</a>
+              <a class="nav-link" href="\src\index.html">Główna</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href=".html">Najnowsze</a>
+              <a class="nav-link" href="\src\pages\newarrivals.html">Najnowsze</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products.html">Męskie</a>
+              <a class="nav-link" href="\src\pages\products.html">Męskie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products.html">Damskie</a>
+              <a class="nav-link" href="\src\pages\products.html">Damskie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about-us.html">O nas</a>
+              <a class="nav-link" href="\src\pages\about-us.html">O nas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Kontakt</a>
+              <a class="nav-link" href="\src\pages\contact.html">Kontakt</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="newarrivals.html">Zaloguj się</a>
+              <a class="nav-link" href="\src\pages\newarrivals.html">Zaloguj się</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="register.html">Zarejestruj się</a>
+              <a class="nav-link" href="\src\pages\register.html">Zarejestruj się</a>
             </li>
               <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link" href="cart.html">Koszyk</a>
+            <a class="nav-link" href="\src\pages\cart.html">Koszyk</a>
           </ul>
         </div>
         </div>
@@ -73,17 +74,36 @@
     </nav>
 </header>
 <main>
-<main class="container">
 
-  <!-- Hero Section -->
-  <section id="hero">
-  <img src="banner-1.jpg" class="img-fluid" alt="hero image">
-<div style="width: 100%; height: auto; display: block;">
-</div>
-</div>
+  <!-- Hero Section Carousel -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="\src\images\banner-1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="\src\images\banner-2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="\src\images\banner-3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
-</section>
 
   <!-- Featured Products Section -->
   <sect id="featured-products">
@@ -93,12 +113,12 @@
       <!-- Product 1 -->
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100 mb-5">
-          <img src="product1.png" class="card-img-top" alt="The Oversize T-Shirt is designed with dropped shoulders and an oversize fit, providing a sense of freedom and comfort. It is made from thick and soft cotton, creating a dream-like feeling against the skin. This t-shirt offers both comfort and style, making it suitable for various occasions, whether you are out and about or relaxing at home. The Oversize T-Shirt is a part of the oversized revolution, where comfort and style go hand in hand.
+          <img src="\src\images\product1.png" class="card-img-top" alt="The Oversize T-Shirt is designed with dropped shoulders and an oversize fit, providing a sense of freedom and comfort. It is made from thick and soft cotton, creating a dream-like feeling against the skin. This t-shirt offers both comfort and style, making it suitable for various occasions, whether you are out and about or relaxing at home. The Oversize T-Shirt is a part of the oversized revolution, where comfort and style go hand in hand.
 ">
           <div class="card-body mb-5">
             <h5 class="card-title">Oversize T-shirt Eyes</h5>
             <h4 class="card-price">€29,99</h4>
-            <a href="#" class="btn btn-primary">Kup Teraz</a>
+            <a href="\src\pages\cart.html" class="btn btn-primary">Kup Teraz</a>
           </div>
         </div>
       </div>
@@ -106,11 +126,11 @@
       <!-- Product 2 -->
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100 mb-5">
-          <img src="product2.png" class="card-img-top" alt="T-SHIRT EVIL embodies the oversized revolution, offering unparalleled freedom and comfort with its dropped shoulders and loose fit. Crafted from premium, thick cotton, it creates a dream-like sensation against the skin. Versatile for any occasion, whether you're on the move or lounging at home, this t-shirt seamlessly blends comfort and style.">
+          <img src="\src\images\product2.png" class="card-img-top" alt="T-SHIRT EVIL embodies the oversized revolution, offering unparalleled freedom and comfort with its dropped shoulders and loose fit. Crafted from premium, thick cotton, it creates a dream-like sensation against the skin. Versatile for any occasion, whether you're on the move or lounging at home, this t-shirt seamlessly blends comfort and style.">
           <div class="card-body">
             <h5 class="card-title">Oversize T-Shirt Evil</h5>
             <h4 class="card-price">€29,99</h4>
-            <a href="#" class="btn btn-primary">Kup Teraz</a>
+            <a href="\src\pages\cart.html" class="btn btn-primary">Kup Teraz</a>
           </div>
           </div>
       </div>
@@ -118,7 +138,7 @@
           <!-- Product 3 -->
           <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100 mb-5">
-          <img src="product3.png" class="card-img-top" alt="The Oversize T-Shirt is designed with dropped shoulders and an oversize fit, providing a sense of freedom and comfort. It is made from thick and soft cotton, creating a dream-like feeling against the skin. This t-shirt offers both comfort and style, making it suitable for various occasions, whether you are out and about or relaxing at home. The Oversize T-Shirt is a part of the oversized revolution, where comfort and style go hand in hand.
+          <img src="\src\images\product3.png" class="card-img-top" alt="The Oversize T-Shirt is designed with dropped shoulders and an oversize fit, providing a sense of freedom and comfort. It is made from thick and soft cotton, creating a dream-like feeling against the skin. This t-shirt offers both comfort and style, making it suitable for various occasions, whether you are out and about or relaxing at home. The Oversize T-Shirt is a part of the oversized revolution, where comfort and style go hand in hand.
 ">
           <div class="card-body mb-5">
             <h5 class="card-title">Oversize T-Shirt Crimescene</h5>
@@ -127,14 +147,17 @@
         </div>
       </div>
       </div>
-      <a href="products.html" class="btn btn-primary">Sprawdz wszystkie produkty</a>
+      <div class="card" mb-5>
+      <a href="\src\pages\products.html" class="btn btn-primary justify-content-center">Sprawdz wszystkie produkty</a>
       </div>
+    </div>
+    
 
   </section>
 
   <!-- About Us Section -->
   <section id="about-us" class="text-center">
-  <img src="logoonas.png" alt="About Us Image" class="img-fluid mx-auto d-block"> 
+  <img src="\src\images\logoonas.png" alt="About Us Image" class="img-fluid mx-auto d-block"> 
   <div class="accordion" id="accordionPanelsStayOpenExample">
   <div class="accordion-item">
     <h2 class="accordion-header">
@@ -225,17 +248,17 @@
           <ul class="list-inline">
             <li class="list-inline-item">
               <a href="https://www.facebook.com/profile.php?id=61551231554405" target="_blank">
-                <img src="Facebook_Logo_Primary.png" alt="Facebook Logo" alt="Facebook" width="30" height="30">
+                <img src="\src\images\Facebook_Logo_Primary.png" alt="Facebook Logo" alt="Facebook" width="30" height="30">
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://www.pinterest.de/BandyxApparel/" target="_blank">
-                <img src="pinterestlogo.png" alt="Pinterest" width="30" height="30">
+                <img src="\src\images\pinterestlogo.png" alt="Pinterest" width="30" height="30">
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://www.instagram.com/manin1055/" target="_blank">
-                <img src="instagramicon.png" alt="Instagram" width="30" height="30">
+                <img src="\src\images\instagramicon.png" alt="Instagram" width="30" height="30">
               </a>
             </li>
             <!-- Add more social media icons as needed -->
@@ -291,7 +314,7 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a class="text-body" href="#!">O Nas</a>
+              <a class="text-body" href="\src\pages\about-us.html">O Nas</a>
             </li>
             <li>
               <a class="text-body" href="#!">Śledzenie zamówienia</a>
@@ -300,7 +323,7 @@
               <a class="text-body" href="#!">Wszystkie Rozmiary</a>
             </li>
             <li>
-              <a class="text-body" href="#!">Skontaktuj sie z nami</a>
+              <a class="text-body" href="\src\pages\contact.html">Skontaktuj sie z nami</a>
             </li>                   
           </ul>
         </div>
@@ -335,10 +358,10 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a class="text-body" href="#!">+48 000 000 000</a>
+              <a class="text-body">+48 000 000 000</a>
             </li>
             <li>
-              <a class="text-body" href="#!">Bandyxshop@gmail</a>
+              <a class="text-body">Bandyxshop@gmail</a>
             </li>
             <li>
               <a class="text-body">Godziny pracy sklepu Poniedziałek - Piątek 08:00 - 16:00 Sobota - Niedziela 10:00 - 14:00</a>
@@ -357,7 +380,8 @@
     © 2024 Copyright: Bandyx 
   </div>
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
