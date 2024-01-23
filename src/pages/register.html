@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="register.js" defer></script>
-<script src="navbar.js" defer>
-  </script>
+<script src="navbar.js" defer></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <style>
     /* Custom CSS for Gradient Background */
     body {
@@ -22,8 +22,27 @@
       padding-left: 0px; /* Example: Adding left padding to the entire body */
       padding-bottom: 0px; /* Example: Adding bottom padding to the entire body */}
   </style>
-  
-  <header>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="path/to/bootstrap.min.css">
+
+  <!-- Custom CSS for Register Page -->
+  <style>
+    body {
+      background-color: #f8f9fa; /* Set your desired background color */}
+
+    .register-container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      margin-top: 100px; /* Adjust as needed */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;}
+  </style>
+</head>
+<body>
+
+<header>
   <!-- Navbar -->
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -73,57 +92,28 @@
     </nav>
 </header>
 
-<style>
-    body {
-      padding-top: 56px; /* Adjust for fixed navbar height */
-    }
-
-    .product-container {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .product-card {
-      margin-bottom: 20px;
-    }
-  </style>
-
-  <title>Product Listing</title>
-</head>
-<body>
-
-  <!-- Navbar (replace with your actual navbar structure) -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Your Brand</a>
-      <!-- Add your navbar links, dropdowns, etc. here -->
+  <div class="container">
+    <div class="register-container">
+      <h2 class="text-center">Rejestracja</h2>
+      <form>
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Dane Osobowe</label>
+          <input type="text" class="form-control" id="fullName" placeholder="Imię i nazwisko" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Adres Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Podaj swoj adres email" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Hasło</label>
+          <input type="password" class="form-control" id="password" placeholder="Utwórz hasło" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Zarejestruj</button>
+      </form>
     </div>
-  </nav>
+  </div>
 
-  <!-- Product Listing Container -->
-  <div class="product-container">
-
-    <!-- Product Cards (replace with your actual product data) -->
-    <div class="card product-card">
-      <img src="product1.jpg" class="card-img-top" alt="Product 1">
-      <div class="card-body">
-        <h5 class="card-title">Product 1</h5>
-        <p class="card-text">Description of Product 1.</p>
-        <a href="#" class="btn btn-primary">View Details</a>
-      </div>
-    </div>
-
-    <div class="card product-card">
-      <img src="product2.jpg" class="card-img-top" alt="Product 2">
-      <div class="card-body">
-        <h5 class="card-title">Product 2</h5>
-        <p class="card-text">Description of Product 2.</p>
-        <a href="#" class="btn btn-primary">View Details</a>
-      </div>
-    </div>
-
-      <footer>
+   <footer>
 
     <!-- Section: Social media -->
   <div class="container text-center md-text-start mt-5 align-items-center" style="margin-top: 20px">              
@@ -262,8 +252,9 @@
     © 2024 Copyright: Bandyx 
   </div>
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-  </body>
+
+  <!-- Bootstrap JavaScript and Popper.js -->
+  <script src="path/to/popper.min.js"></script>
+  <script src="path/to/bootstrap.bundle.min.js"></script>
+</body>
 </html>

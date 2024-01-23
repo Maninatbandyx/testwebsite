@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="register.js" defer></script>
-<script src="navbar.js" defer>
-  </script>
+<script src="navbar.js" defer></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <style>
     /* Custom CSS for Gradient Background */
     body {
@@ -22,27 +22,7 @@
       padding-left: 0px; /* Example: Adding left padding to the entire body */
       padding-bottom: 0px; /* Example: Adding bottom padding to the entire body */}
   </style>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="path/to/bootstrap.min.css">
-
-  <!-- Custom CSS for Login Page -->
-  <style>
-    body {
-      background-color: #f8f9fa; /* Set your desired background color */
-    }
-
-    .login-container {
-      max-width: 400px;
-      margin: auto;
-      padding: 20px;
-      margin-top: 100px; /* Adjust as needed */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      background-color: #ffffff;}
-  </style>
-</head>
-<body>
-<!-- Navbar -->
-
+  
   <header>
   <!-- Navbar -->
 
@@ -55,7 +35,7 @@
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+            
         <!-- Navigation Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
@@ -63,13 +43,13 @@
               <a class="nav-link" href="index.html">Główna</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="newarrivals.html">Najnowsze</a>
+              <a class="nav-link" href=".html">Najnowsze</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="męskie.html">Męskie</a>
+              <a class="nav-link" href="products.html">Męskie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="damskie.html">Damskie</a>
+              <a class="nav-link" href="products.html">Damskie</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about-us.html">O nas</a>
@@ -82,34 +62,93 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="register.html">Zarejestruj się</a>
+            </li>
+              <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="cart.html">Koszyk</a>
           </ul>
         </div>
         </div>
       </div>
     </nav>
 </header>
-  <div class="container">
-    <div class="login-container">
-      <h2 class="text-center">Login</h2>
-      <form>
-        <div class="mb-3">
-          <label for="username" class="form-label">Username</label>
-          <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
-        </div>
-        <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="rememberMe">
-          <label class="form-check-label" for="rememberMe">Remember me</label>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Login</button>
-      </form>
-    </div>
-  </div>
 
-   <footer>
+<style>
+    body {
+      padding-top: 56px; /* Adjust for fixed navbar height */
+    }
+
+    .cart-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .cart-item {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .item-image {
+      flex: 0 0 50px; /* Set a fixed width for the item image */
+      margin-right: 10px;
+    }
+
+    .item-details {
+      flex-grow: 1;
+    }
+
+    .item-remove {
+      cursor: pointer;
+      color: red;
+    }
+
+    .cart-total {
+      margin-top: 20px;
+      text-align: right;
+    }
+  </style>
+
+  <title>Shopping Cart</title>
+</head>
+<body>
+
+  <!-- Shopping Cart Container -->
+  <main>
+  <div class="cart-container">
+
+    <!-- Cart Items (replace with your actual cart item data) -->
+    <div class="cart-item">
+      <img src="product1.jpg" alt="Product 1" class="item-image">
+      <div class="item-details">
+        <h5>Product 1</h5>
+        <p>Price: $19.99</p>
+        <p>Quantity: 2</p>
+      </div>
+      <div class="item-remove">&#10005;</div>
+    </div>
+
+    <div class="cart-item">
+      <img src="product2.jpg" alt="Product 2" class="item-image">
+      <div class="item-details">
+        <h5>Product 2</h5>
+        <p>Price: $24.99</p>
+        <p>Quantity: 1</p>
+      </div>
+      <div class="item-remove">&#10005;</div>
+    </div>
+
+    <!-- Add more cart items as needed -->
+
+    <!-- Cart Total -->
+    <div class="cart-total">
+      <h4>Total: $44.97</h4>
+    </div>
+ </div>
+ </main>
+ <footer>
 
     <!-- Section: Social media -->
   <div class="container text-center md-text-start mt-5 align-items-center" style="margin-top: 20px">              
@@ -248,9 +287,8 @@
     © 2024 Copyright: Bandyx 
   </div>
 </footer>
-
-  <!-- Bootstrap JavaScript and Popper.js -->
-  <script src="path/to/popper.min.js"></script>
-  <script src="path/to/bootstrap.bundle.min.js"></script>
-</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
 </html>

@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="register.js" defer></script>
-<script src="navbar.js" defer>
-  </script>
+<script src="navbar.js" defer></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <style>
     /* Custom CSS for Gradient Background */
     body {
@@ -35,7 +35,11 @@
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-            
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
         <!-- Navigation Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
@@ -43,13 +47,13 @@
               <a class="nav-link" href="index.html">Główna</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href=".html">Najnowsze</a>
+              <a class="nav-link" href="newarrivals.html">Najnowsze</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products.html">Męskie</a>
+              <a class="nav-link" href="męskie.html">Męskie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products.html">Damskie</a>
+              <a class="nav-link" href="damskie.html">Damskie</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about-us.html">O nas</a>
@@ -62,163 +66,64 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="register.html">Zarejestruj się</a>
-              <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="cart.html">
-          <i class="fas fa-shopping-cart"></i> Cart
           </ul>
         </div>
         </div>
       </div>
     </nav>
 </header>
-<main>
-<main class="container">
 
-  <!-- Hero Section -->
-  <section id="hero">
-  <img src="banner-1.jpg" class="img-fluid" alt="hero image">
-<div style="width: 100%; height: auto; display: block;">
-</div>
-</div>
-</div>
+<style>
+    body {
+      padding-top: 56px; /* Adjust for fixed navbar height */
+    }
 
-</section>
+    .product-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
 
-  <!-- Featured Products Section -->
-  <sect id="featured-products">
-  
-  <h1>Nowości od Bandyx</h1>
-    <div class="row">
-      <!-- Product 1 -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-          <img src="product1.png" class="card-img-top" alt="The Oversize T-Shirt is designed with dropped shoulders and an oversize fit, providing a sense of freedom and comfort. It is made from thick and soft cotton, creating a dream-like feeling against the skin. This t-shirt offers both comfort and style, making it suitable for various occasions, whether you are out and about or relaxing at home. The Oversize T-Shirt is a part of the oversized revolution, where comfort and style go hand in hand.
-">
-          <div class="card-body">
-            <h5 class="card-title">Oversize T-shirt Eyes</h5>
-            <h4 class="card-price">€29,99</h4>
-            <a href="#" class="btn btn-primary">Kup Teraz</a>
-          </div>
-        </div>
-      </div>
+    .product-card {
+      margin-bottom: 20px;
+    }
+  </style>
 
-      <!-- Product 2 -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-          <img src="product2.png" class="card-img-top" alt="T-SHIRT EVIL embodies the oversized revolution, offering unparalleled freedom and comfort with its dropped shoulders and loose fit. Crafted from premium, thick cotton, it creates a dream-like sensation against the skin. Versatile for any occasion, whether you're on the move or lounging at home, this t-shirt seamlessly blends comfort and style.">
-          <div class="card-body">
-            <h5 class="card-title">Oversize T-Shirt Evil</h5>
-            <h4 class="card-price">€29,99</h4>
-            <a href="#" class="btn btn-primary">Kup Teraz</a>
-          </div>
-          </div>
-      </div>
+  <title>Product Listing</title>
+</head>
+<body>
 
-          <!-- Product 3 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-          <img src="product3.png" class="card-img-top" alt="The Oversize T-Shirt is designed with dropped shoulders and an oversize fit, providing a sense of freedom and comfort. It is made from thick and soft cotton, creating a dream-like feeling against the skin. This t-shirt offers both comfort and style, making it suitable for various occasions, whether you are out and about or relaxing at home. The Oversize T-Shirt is a part of the oversized revolution, where comfort and style go hand in hand.
-">
-          <div class="card-body">
-            <h5 class="card-title">Oversize T-Shirt Crimescene</h5>
-            <h4 class="card-price">€29,99</h4>
-            <a href="#" class="btn btn-primary">Kup Teraz</a>
-        </div>
-      </div>
-      </div>
-      <a href="products.html" class="btn btn-primary">Sprawdz wszystkie produkty</a>
-      </div>
+  <!-- Navbar (replace with your actual navbar structure) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Your Brand</a>
+      <!-- Add your navbar links, dropdowns, etc. here -->
+    </div>
+  </nav>
 
-  </section>
+  <!-- Product Listing Container -->
+  <div class="product-container">
 
-  <!-- About Us Section -->
-  <section id="about-us" class="text-center">
-  <img src="logoonas.png" alt="About Us Image" class="img-fluid mx-auto d-block"> 
-  <div class="accordion" id="accordionPanelsStayOpenExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-        Odporność
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-      <div class="accordion-body">
-        <strong>Kiedy mówimy Odporność, mamy na myśli zdolność odbicia się od trudnych sytuacji. Chcemy tworzyć ubrania, które pomogą Ci poczuć się silnym i zdolnym, nawet gdy życie staje się trudne.</strong>
+    <!-- Product Cards (replace with your actual product data) -->
+    <div class="card product-card">
+      <img src="product1.jpg" class="card-img-top" alt="Product 1">
+      <div class="card-body">
+        <h5 class="card-title">Product 1</h5>
+        <p class="card-text">Description of Product 1.</p>
+        <a href="#" class="btn btn-primary">View Details</a>
       </div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-        Indywidualnośc
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        <strong>Indywidualność odnosi się do idei, że każdy jest wyjątkowy i ma własną osobowość, styl i perspektywę. Bandyx Apparel pragnie celebrować tę wyjątkowość, tworząc ubrania, które pomogą Ci wyrazić siebie na swój własny sposób.</strong>
+
+    <div class="card product-card">
+      <img src="product2.jpg" class="card-img-top" alt="Product 2">
+      <div class="card-body">
+        <h5 class="card-title">Product 2</h5>
+        <p class="card-text">Description of Product 2.</p>
+        <a href="#" class="btn btn-primary">View Details</a>
       </div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-        Aspiracja
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-      <div class="accordion-body">
-        <strong>Aspiracja oznacza posiadanie celów i marzeń na przyszłość. Bandyx Apparel chce tworzyć ubrania, które zainspirują Cię do pogoni za swoimi aspiracjami i bycia najlepszą wersją siebie.</strong>
-      </div>
-    </div>
-  </div>
 
-  </section>
-  <!-- Contact Section -->
-  <section id="contact"> 
-  <div class="container" style="margin-top: 50px">
-    <div class="row">
-      <div class="col-lg-6">
-        <h2>Skontaktuj sie z nami</h2>
-        <p>Masz pytania lub chcesz podzielić się swoją opinią? Jesteśmy tu dla Ciebie.</p>
-
-        <!-- Contact Form -->
-        <form>
-          <div class="form-group">
-            <label for="Imię">Imię:</label>
-            <input type="text" class="form-control" id="name" placeholder="Podaj swoje imię">
-          </div>
-
-          <div class="form-group">
-            <label for="Adres Email">Email:</label>
-            <input type="Adres Email" class="form-control" id="email" placeholder="Podaj swoj adres email">
-          </div>
-
-          <div class="form-group">
-            <label for="Tekst">Twoja wiadomość:</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="Podziel się swoją opinią"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary">Wyślij</button>
-        </form>
-      </div>
-      <div class="col-lg-6">
-        <!-- Additional Contact Information -->
-        <h4>Informacje dodatkowe:</h4>
-        <p>Email: bandyxshop@gmail.com</p>
-        <p>Phone: (123) 456-7890</p>
-
-        <!-- Social Media Links -->
-        <h4>Obserwuj nas:</h4>
-        <a href="https://www.facebook.com/profile.php?id=61551231554405" target="_blank">Facebook</a> | <a href="https://www.pinterest.de/BandyxApparel/" target="_blank">Pinterest</a> | <a href="#" target="_blank">Instagram</a>
-      </div>
-    </div>
-  </div>
-  </section>
-</main>
-
-  </head>
-  <footer>
+      <footer>
 
     <!-- Section: Social media -->
   <div class="container text-center md-text-start mt-5 align-items-center" style="margin-top: 20px">              
