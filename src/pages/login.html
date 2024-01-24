@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="register.js" defer></script>
 <script src="navbar.js" defer></script>
+<script src="cart.js" defer></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <style>
@@ -21,7 +22,7 @@
       padding-right: 0px; /* Example: Adding right padding to the entire body */
       padding-left: 0px; /* Example: Adding left padding to the entire body */
       padding-bottom: 0px; /* Example: Adding bottom padding to the entire body */}
-  </style>
+  </styl>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="path/to/bootstrap.min.css">
 
@@ -41,16 +42,15 @@
   </style>
 </head>
 <body>
-<!-- Navbar -->
 
   <header>
   <!-- Navbar -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <!-- Logo -->
-        <a class="Bandyx Apparel" href="index.html">
-          <img src="logonav.png" alt="Your Logo" width="100" height="100" class="d-inline-block align-top">
+        <a class="Bandyx Apparel" href="\src\index.html">
+          <img src="\src\images\logonav.png" alt="Your Logo" width="100" height="100" class="d-inline-block align-top">
         </a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -94,21 +94,21 @@
 </header>
   <div class="container">
     <div class="login-container">
-      <h2 class="text-center">Login</h2>
+      <h2 class="text-center">Zaloguj się</h2>
       <form>
-        <div class="mb-3">
-          <label for="username" class="form-label">Username</label>
-          <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+        <div class="mb-4">
+          <label for="Nazwa Użytkownika" class="form-label">Nazwa Użytkownika</label>
+          <input type="text" class="form-control" id="username" placeholder="Podaj Nazwe Użytkownika" required>
         </div>
-        <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+        <div class="mb-4">
+          <label for="Hasło" class="form-label">Hasło</label>
+          <input type="password" class="form-control" id="password" placeholder="Wpisz Hasło" required>
         </div>
-        <div class="mb-3 form-check">
+        <div class="mb-4 form-check">
           <input type="checkbox" class="form-check-input" id="rememberMe">
-          <label class="form-check-label" for="rememberMe">Remember me</label>
+          <label class="form-check-label" for="rememberMe">Pamiętaj mnie</label>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Login</button>
+        <button type="submit" class="btn btn-primary btn-block">Zaloguj</button>
       </form>
     </div>
   </div>
@@ -120,17 +120,17 @@
           <ul class="list-inline">
             <li class="list-inline-item">
               <a href="https://www.facebook.com/profile.php?id=61551231554405" target="_blank">
-                <img src="Facebook_Logo_Primary.png" alt="Facebook Logo" alt="Facebook" width="30" height="30">
+                <img src="\src\images\Facebook_Logo_Primary.png" alt="Facebook Logo" alt="Facebook" width="30" height="30">
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://www.pinterest.de/BandyxApparel/" target="_blank">
-                <img src="pinterestlogo.png" alt="Pinterest" width="30" height="30">
+                <img src="\src\images\pinterestlogo.png" alt="Pinterest" width="30" height="30">
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://www.instagram.com/manin1055/" target="_blank">
-                <img src="instagramicon.png" alt="Instagram" width="30" height="30">
+                <img src="\src\images\instagramicon.png" alt="Instagram" width="30" height="30">
               </a>
             </li>
             <!-- Add more social media icons as needed -->
@@ -186,7 +186,7 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a class="text-body" href="#!">O Nas</a>
+              <a class="text-body" href="\src\pages\about-us.html">O Nas</a>
             </li>
             <li>
               <a class="text-body" href="#!">Śledzenie zamówienia</a>
@@ -195,7 +195,7 @@
               <a class="text-body" href="#!">Wszystkie Rozmiary</a>
             </li>
             <li>
-              <a class="text-body" href="#!">Skontaktuj sie z nami</a>
+              <a class="text-body" href="\src\pages\contact.html">Skontaktuj sie z nami</a>
             </li>                   
           </ul>
         </div>
@@ -230,10 +230,10 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a class="text-body" href="#!">+48 000 000 000</a>
+              <a class="text-body">+48 000 000 000</a>
             </li>
             <li>
-              <a class="text-body" href="#!">Bandyxshop@gmail</a>
+              <a class="text-body">Bandyxshop@gmail</a>
             </li>
             <li>
               <a class="text-body">Godziny pracy sklepu Poniedziałek - Piątek 08:00 - 16:00 Sobota - Niedziela 10:00 - 14:00</a>
